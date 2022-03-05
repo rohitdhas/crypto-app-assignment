@@ -30,7 +30,7 @@
     position: absolute;
     content: "";
     height: 16px;
-    width: 16px;
+    width: 16px;  
     left: 4px;
     bottom: 4px;
     background-color: #d1d5db;
@@ -60,3 +60,30 @@
   .slider.round:before {
     border-radius: 50%;
   }
+
+  .off
+{
+  display: none;
+  left: 25%;
+}
+
+.on {
+  right: 0%;
+}
+
+.on, .off
+{
+  color: white;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: Verdana, sans-serif;
+}
+
+input:checked+ .slider .off
+{display: block;}
+
+input:checked + .slider .on
+{display: none;}

@@ -15,3 +15,26 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  /* width */
+  .styled-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  .styled-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  .styled-scrollbar::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+
+  /* Handle on hover */
+  .styled-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}

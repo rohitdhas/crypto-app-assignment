@@ -7,7 +7,7 @@ type Props = {
 
 const Sidebar: React.FC<Props> = ({ toggleDarkMode }) => {
   return (
-    <div className="absolute top-0 left-0 bottom-0 z-10 border-2 border-r-gray-400 pt-16 px-6 w-1/5 dark:bg-black overflow-auto flex flex-col">
+    <div className="absolute top-0 left-0 bottom-0 z-10 border-2 border-r-gray-400 pt-16 px-6 w-1/5 dark:bg-black overflow-auto flex flex-col styled-scrollbar">
       {/* Profile Icon */}
       <div className="flex justify-between align items-center">
         <div className="flex align items-center">
@@ -56,8 +56,11 @@ const Sidebar: React.FC<Props> = ({ toggleDarkMode }) => {
         <div className="my-4 flex align items-center">
           <i className="bi bi-globe rounded-full px-1 hover:bg-slate-800 cursor-pointer dark:text-white text-xl font-bold mr-4"></i>
           <label className="switch">
-            <input type="checkbox" onChange={toggleDarkMode} />
-            <span className="slider round"></span>
+            <input type="checkbox" onChange={toggleDarkMode} defaultChecked />
+            <span className="slider round">
+              <i className="on bi bi-brightness-high"></i>
+              <i className="off bi bi-moon-stars"></i>
+            </span>
           </label>
         </div>
       </div>
