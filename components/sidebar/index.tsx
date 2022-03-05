@@ -5,9 +5,9 @@ type Props = {
   toggleDarkMode: any;
 };
 
-const Sidebar: React.FC<Props> = ({ toggleDarkMode }) => {
+const Index: React.FC<Props> = ({ toggleDarkMode }) => {
   return (
-    <div className="absolute top-0 left-0 bottom-0 z-10 border-2 border-r-gray-400 pt-16 px-6 w-1/5 dark:bg-black overflow-auto flex flex-col styled-scrollbar">
+    <div className="absolute top-0 left-0 bottom-0 z-10 border-r-2 border-r-slate-700 pt-16 px-6 w-1/5 dark:bg-black overflow-auto flex flex-col styled-scrollbar">
       {/* Profile Icon */}
       <div className="flex justify-between align items-center">
         <div className="flex align items-center">
@@ -49,12 +49,12 @@ const Sidebar: React.FC<Props> = ({ toggleDarkMode }) => {
             </div>
             <p className="text-sm">$0.90</p>
           </div>
-          <div className="cursor-pointer hover:bg-blue-400 text-blue-600 text-sm font-bold bg-blue-300 px-3 py-2 rounded-lg">
+          <div className="cursor-pointer hover:bg-cyan-300 text-blue-600 text-sm font-bold bg-cyan-200 px-3 py-2 rounded-lg">
             Buy $XYZ
           </div>
         </div>
         <div className="my-4 flex align items-center">
-          <i className="bi bi-globe rounded-full px-1 hover:bg-slate-800 cursor-pointer dark:text-white text-xl font-bold mr-4"></i>
+          <i className="bi bi-globe rounded-full px-1 cursor-pointer dark:text-white text-xl font-bold mr-4"></i>
           <label className="switch">
             <input type="checkbox" onChange={toggleDarkMode} defaultChecked />
             <span className="slider round">
@@ -68,4 +68,4 @@ const Sidebar: React.FC<Props> = ({ toggleDarkMode }) => {
   );
 };
 
-export default Sidebar;
+export default Index;

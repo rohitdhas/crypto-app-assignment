@@ -17,6 +17,12 @@ body {
 @tailwind utilities;
 
 @layer utilities {
+  .margin-left-20 {
+    margin-left: 20%;
+  }
+  .width-70 {
+    width: 70%;
+  }
   /* width */
   .styled-scrollbar::-webkit-scrollbar {
     width: 8px;
