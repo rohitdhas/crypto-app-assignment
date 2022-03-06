@@ -20,7 +20,6 @@ const TransactionTable: React.FC = () => {
       .then((res) => res.json())
       .then(({ data }) => {
         if (data && data.length) {
-          console.log(data);
           setTransactions(data);
         }
       });
@@ -30,7 +29,7 @@ const TransactionTable: React.FC = () => {
     <table className="w-full">
       <tr className="dark:bg-slate-800 bg-slate-300 text-xs dark:text-gray-400 text-gray-700 p-4 flex justify-around tracking-wide rounded-md">
         <td>ASSET</td>
-        <td>AMOUNT</td>
+        <td className="pl-16">AMOUNT</td>
         <td>USER ACCOUNT</td>
         <td>REFERRAL EARNING</td>
       </tr>
@@ -44,20 +43,22 @@ const TransactionTable: React.FC = () => {
               <div className="img">
                 <Image src={trans.img} height={30} width={30} alt="coin icon" />
               </div>
-              <div className="ml-4">
-                <p className="font-bold dark:text-white">{trans.asset}</p>
+              <div className="ml-2">
+                <p className="font-bold text-sm dark:text-white">
+                  {trans.asset}
+                </p>
                 <div className="flex">
-                  <span className="text-sm mr-2 text-gray-500">
+                  <span className="text-sm mr-1 text-gray-500">
                     {trans.type}
                   </span>
-                  <span className="p-1 bg-slate-700 rounded-full flex align items-center">
+                  <span className="p-2 py-1 bg-slate-700 rounded-full flex align items-center">
                     <Image
                       src={trans.chain.img}
                       height={15}
                       width={15}
                       alt="chain icon"
                     />
-                    <span className="ml-1 text-xs dark:text-white font-bold">
+                    <span className="ml-1 text-xs font-bold dark:text-white">
                       {trans.chain.name}
                     </span>
                   </span>
@@ -65,7 +66,9 @@ const TransactionTable: React.FC = () => {
               </div>
             </td>
             <td className="text-center">
-              <p className="font-bold dark:text-white">{trans.amount} BTC</p>
+              <p className="font-bold dark:text-white text-sm">
+                {trans.amount} BTC
+              </p>
               <p className="text-sm text-gray-500">{trans.state}</p>
             </td>
             <td className="font-bold dark:text-white text-sm flex align items-center">
@@ -77,7 +80,7 @@ const TransactionTable: React.FC = () => {
               <span className="dark:text-white font-bold">
                 {trans.referral_earnings} BTC
               </span>
-              <span className="text-gray-500 text-sm">
+              <span className="text-gray-500 text-xs hover:text-blue-500 cursor-pointer">
                 View on BSC Scan
                 <i className="bi bi-box-arrow-up-right ml-2"></i>
               </span>
