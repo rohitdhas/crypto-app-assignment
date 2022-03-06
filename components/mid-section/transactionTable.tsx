@@ -52,7 +52,7 @@ const TransactionTable: React.FC = () => {
                   <span className="text-sm mr-1 text-gray-500">
                     {trans.type}
                   </span>
-                  <span className="p-2 py-1 bg-slate-700 rounded-full flex align items-center">
+                  <span className="p-2 py-1 bg-secondary-gray rounded-full flex align items-center">
                     <Image
                       src={trans.chain.img}
                       height={15}
