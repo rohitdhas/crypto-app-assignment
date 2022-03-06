@@ -1,6 +1,7 @@
+import Section from "../components/mid-section";
+import RightSection from "../components/rightSection";
 import type { NextPage } from "next";
 import Head from "next/head";
-import Section from "../components/section";
 
 const Home: NextPage = () => {
   return (
@@ -8,8 +9,9 @@ const Home: NextPage = () => {
       <Head>
         <title>Crypto App</title>
       </Head>
-      <main>
+      <main className="flex">
         <Section />
+        <RightSection />
       </main>
     </div>
   );

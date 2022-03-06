@@ -43,13 +43,13 @@ const Index: React.FC<Props> = ({ toggleDarkMode }) => {
       {/* Sidebar footer */}
       <div className="mt-auto">
         <div className="flex align items-center justify-between">
-          <div className="cursor-pointer hover:bg-gray-600 bg-gray-700 font-bold dark:text-white flex align items-center px-3 py-2 xxl:px-4 rounded-lg">
+          <div className="flex-1 cursor-pointer hover:bg-gray-600 bg-gray-700 font-bold dark:text-white flex align items-center justify-center px-3 py-2 mr-2 xxl:px-4 rounded-lg">
             <div className="text-sm mr-2 font-bold text-center bg-blue-500 rounded-full px-1 dark:text-white w-min">
               N
             </div>
             <p className="text-sm">$0.90</p>
           </div>
-          <div className="cursor-pointer hover:bg-cyan-300 text-blue-600 text-sm font-bold bg-cyan-200 px-3 py-2 rounded-lg">
+          <div className="flex-1 cursor-pointer text-center hover:bg-cyan-300 text-blue-600 text-sm font-bold bg-cyan-200 px-3 py-2 rounded-lg">
             Buy $XYZ
           </div>
         </div>

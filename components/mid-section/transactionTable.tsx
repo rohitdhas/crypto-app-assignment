@@ -20,13 +20,14 @@ const TransactionTable: React.FC = () => {
       .then((res) => res.json())
       .then(({ data }) => {
         if (data && data.length) {
+          console.log(data);
           setTransactions(data);
         }
       });
   }, []);
 
   return (
-    <table className="w-full">
+    <table className="w-full mb-8">
       <tr className="dark:bg-slate-800 bg-slate-300 text-xs dark:text-gray-400 text-gray-700 p-4 flex justify-around tracking-wide rounded-md">
         <td>ASSET</td>
         <td className="pl-16">AMOUNT</td>
@@ -34,6 +35,7 @@ const TransactionTable: React.FC = () => {
         <td>REFERRAL EARNING</td>
       </tr>
       {transactions.map((trans: Transaction, idx) => {
+        // if (idx > 0) return <></>;
         return (
           <tr
             key={`${trans.user}_${idx}`}
