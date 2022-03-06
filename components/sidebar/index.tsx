@@ -16,7 +16,7 @@ const Index: React.FC<Props> = ({ toggleDarkMode }) => {
           </div>
           <h1 className="text-xl dark:text-white font-bold ml-2">Name</h1>
         </div>
-        <i className="bi bi-arrow-left dark:text-white text-2xl px-2 py-1 rounded-full cursor-pointer hover:bg-slate-800"></i>
+        <i className="bi bi-arrow-left dark:text-white text-2xl px-2 py-1 rounded-full cursor-pointer dark:hover:bg-primary-gray hover:bg-slate-400"></i>
       </div>
 
       {/* List Items */}
@@ -43,7 +43,7 @@ const Index: React.FC<Props> = ({ toggleDarkMode }) => {
       {/* Sidebar footer */}
       <div className="mt-auto">
         <div className="flex align items-center justify-between">
-          <div className="flex-1 cursor-pointer hover:bg-gray-600 bg-gray-700 font-bold dark:text-white flex align items-center justify-center px-3 py-2 mr-2 xxl:px-4 rounded-lg">
+          <div className="flex-1 cursor-pointer dark:hover:bg-gray-800 dark:bg-primary-gray hover:bg-slate-500 bg-slate-400 font-bold dark:text-white flex align items-center justify-center px-3 py-2 mr-2 xxl:px-4 rounded-lg">
             <div className="text-sm mr-2 font-bold text-center bg-blue-500 rounded-full px-1 dark:text-white w-min">
               N
             </div>

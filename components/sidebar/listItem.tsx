@@ -11,9 +11,9 @@ const ListItem: React.FC<Props> = ({ label, icon, active }) => {
     <li
       className={`${
         active
-          ? "bg-gray-700 font-bold text-white"
+          ? "dark:bg-primary-gray bg-slate-400 font-bold dark:text-white"
           : "dark:text-gray-400 text-gray-800"
-      }  mt-2 flex align items-center cursor-pointer p-2 hover:bg-gray-700 hover:text-white hover:font-bold rounded-xl`}
+      }  mt-2 flex align items-center cursor-pointer p-2 dark:hover:bg-primary-gray hover:bg-slate-400 hover:font-bold rounded-xl`}
     >
       <i className={icon}></i>
       <p className="ml-6 text-sm">{label}</p>

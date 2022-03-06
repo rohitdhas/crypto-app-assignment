@@ -17,12 +17,29 @@ body {
 @tailwind utilities;
 
 @layer utilities {
+  /* Custom Sizes */
   .margin-left-20 {
     margin-left: 20%;
   }
   .width-70 {
     width: 70%;
   }
+  
+  /* Custom Colors */
+  .bg-primary-gray {
+    background-color: #191B20;
+  }
+  .bg-secondary-gray {
+    background-color: #353945;
+  }
+  .bg-light-gray {
+    background-color: #4D5263;
+  }
+  .bg-dim-gray {
+    background-color: #121416;
+  }
+
+  /* Scrollbar styles */
   /* width */
   .styled-scrollbar::-webkit-scrollbar {
     width: 4px;

@@ -20,7 +20,6 @@ const TransactionTable: React.FC = () => {
       .then((res) => res.json())
       .then(({ data }) => {
         if (data && data.length) {
-          console.log(data);
           setTransactions(data);
         }
       });
@@ -28,7 +27,7 @@ const TransactionTable: React.FC = () => {
 
   return (
     <table className="w-full mb-8">
-      <tr className="dark:bg-slate-800 bg-slate-300 text-xs dark:text-gray-400 text-gray-700 p-4 flex justify-around tracking-wide rounded-md">
+      <tr className="dark:bg-primary-gray bg-slate-300 text-xs dark:text-gray-400 text-gray-700 p-4 flex justify-around tracking-wide rounded-md">
         <td>ASSET</td>
         <td className="pl-16">AMOUNT</td>
         <td>USER ACCOUNT</td>
@@ -39,7 +38,7 @@ const TransactionTable: React.FC = () => {
         return (
           <tr
             key={`${trans.user}_${idx}`}
-            className="dark:bg-slate-900 dark:text-gray-400 bg-slate-200 flex justify-around p-2 rounded-md my-1"
+            className="dark:bg-dim-gray dark:text-gray-400 bg-slate-200 flex justify-around p-2 rounded-md my-1"
           >
             <td className="flex align items-center">
               <div className="img">

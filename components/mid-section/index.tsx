@@ -11,7 +11,7 @@ const Index: React.FC = () => {
         <div className="dark:text-white p-1 border-b-2 border-blue-500 w-max">
           Section 8
         </div>
-        <div className="flex align items-center justify-between dark:bg-slate-800 bg-slate-300 py-2 px-3 rounded-xl">
+        <div className="flex align items-center justify-between dark:bg-primary-gray bg-slate-300 py-2 px-3 rounded-xl">
           <i className="bi bi-wallet text-blue-500 font-bold mr-4"></i>
           <p className="dark:text-white mr-4 text-sm font-bold">0.2 $XYZ</p>
           <div className="px-2 py-1 text-sm rounded-md bg-cyan-200 text-blue-500 font-bold">
