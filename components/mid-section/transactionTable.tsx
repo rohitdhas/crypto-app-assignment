@@ -26,7 +26,7 @@ const TransactionTable: React.FC = () => {
   }, []);
 
   return (
-    <table className="w-full mb-8">
+    <table className="w-full mb-4">
       <tr className="dark:bg-primary-gray bg-slate-300 text-xs dark:text-gray-400 text-gray-700 p-4 flex justify-around tracking-wide rounded-md">
         <td>ASSET</td>
         <td className="pl-16">AMOUNT</td>
