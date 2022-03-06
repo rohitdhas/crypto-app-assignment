@@ -34,7 +34,7 @@ const TransactionTable: React.FC = () => {
         <td>REFERRAL EARNING</td>
       </tr>
       {transactions.map((trans: Transaction, idx) => {
-        // if (idx > 0) return <></>;
+        if (idx > 0) return <></>;
         return (
           <tr
             key={`${trans.user}_${idx}`}

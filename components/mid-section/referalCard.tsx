@@ -7,7 +7,7 @@ type Props = {
 const ReferalCard: React.FC<Props> = ({ mg_class }) => {
   return (
     <div
-      className={`p-4 flex-1 dark:bg-primary-gray bg-slate-300 rounded-xl ${mg_class}`}
+      className={`p-3 flex-1 dark:bg-primary-gray bg-slate-300 rounded-xl ${mg_class}`}
     >
       <div>
         <i className="bi bi-currency-dollar mr-2 px-1 text-white font-bold bg-blue-500 rounded-full"></i>
